@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 @media screen and (max-width:768px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
     body{
         background-color: purple;
     }
@@ -9,5 +15,108 @@
     }
     h1{
         text-align: center;
+    }
+    main > img{
+        width: 100%;
+        height: 300px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    main > #conteudo{
+        padding: 5px;
+    }
+    main{
+        border-radius: 20px 20px 10px 10px;
+        max-width: 250px;
+        height: 90%;
+        margin: auto
+    }
+    
+    p{
+        padding-bottom: 10px;
+    }
+
+    input{
+        background-color: #94CFCD;
+        height: 30px;
+        
+    }
+    #entrar:hover{
+        background-color: #2D6462;
+        transition-duration: .5s;
+    }
+    #esenha{
+        display: block;
+        height: 40px;
+        padding: 5px;
+        width: 220px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        background-color: #94cfcd;
+    }
+    .form{
+        background-color: #b09a80;
+        width: 220px;
+        padding: 3px 0px;
+        border-radius: 10px;
+    }
+    .form > img{
+        position: relative;
+        transform: translate(10%, 25%);
+
+        
+    }
+    #entrar{
+        display: block;
+        height: 40px;
+        padding: 5px;
+        width: 220px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        text-decoration: none;
+    }
+    #esenha > p{
+        position: relative;
+        top:30%;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+@media  screen and (min-width:768px) {
+    
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding: 0px;
+        margin:0px;
+    }
+
+    body{
+        background-image: linear-gradient(45deg, #5E2E82, #4A9B9C);
+    }
+    
+    main{
+        padding: 10px;  
+    }
+
+    #imagem > img{
+        width: 209px;
+        height: 280px;
+        display: block;
+        border-radius: 30px 0px 0px 30px;
+        display: inline-block;
+    }
+    #conteudo{
+        position: relative;
+        max-height: 280px;
+        width: 467px;
+        border-radius: 0px 30px 30px 0px;
+        display: block;
+        background-color: white;
+        transform: translate(120%, -30%);
+        
     }
 }
